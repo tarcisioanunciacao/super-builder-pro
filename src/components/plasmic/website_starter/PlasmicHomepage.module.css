@@ -9135,7 +9135,7 @@
   color: rgba(255, 255, 255, 1);
   position: relative;
 }
-.productCollection__ba5U:global(.__wab_instance) {
+.productCollection:global(.__wab_instance) {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 8px;
@@ -9157,11 +9157,11 @@
   min-width: 0;
   padding: 8px;
 }
-.productTextField__sdBhl:global(.__wab_instance) {
+.productTextField:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
 }
-.productMedia__m59UN:global(.__wab_instance) {
+.productMedia:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
 }
@@ -9178,38 +9178,6 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-}
-.productMedia__t1OGc:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: contain;
-  position: relative;
-  object-position: left 50%;
-  width: 50%;
-}
-.productBox:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-  position: relative;
-}
-.freeBox__j4Kvp {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.productTextField__mkEa6:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.productMedia__kIKfv:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
 }
 .frame11573 {
   background: rgba(248, 248, 248, 1);
@@ -9293,52 +9261,6 @@
   position: relative;
   flex-shrink: 0;
   border-radius: 12.805px;
-}
-.productCollection__nTiSk:global(.__wab_instance) {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 8px;
-  grid-column-gap: 8px;
-  max-width: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  padding: 8px;
-}
-.freeBox___5OBql {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-  align-items: center;
-  min-width: 0;
-  padding: 8px;
-}
-.productTextField__wzBaV:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.productMedia__tKbqG:global(.__wab_instance) {
-  max-width: 100%;
-  object-fit: cover;
-}
-.text__jUl4 {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-}
-.text__dsHi {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
 }
 .arrows2 {
   width: 526px;
