@@ -55,6 +55,11 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { ProductCollection } from "@plasmicpkgs/commerce";
+import { ProductTextField } from "@plasmicpkgs/commerce";
+import { ProductMedia } from "@plasmicpkgs/commerce";
+import { ProductBox } from "@plasmicpkgs/commerce";
+
 import { useScreenVariants as useScreenVariantsvgHwH75QMkDi } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: VGHwH75qMKDi/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -430,13 +435,13 @@ export type PlasmicHomepage__OverridesType = {
   lpDesktop?: Flex__<"div">;
   frame10?: Flex__<"div">;
   frame11567?: Flex__<"div">;
+  logo7FullName4?: Flex__<"div">;
   frame66?: Flex__<"div">;
   frame11568?: Flex__<"div">;
   cart2?: Flex__<"div">;
   group3?: Flex__<"div">;
   tagLCart3?: Flex__<"div">;
   tagLCart4?: Flex__<"div">;
-  logo7FullName4?: Flex__<"div">;
   frame11453?: Flex__<"div">;
   group4?: Flex__<"div">;
   group745?: Flex__<"div">;
@@ -450,6 +455,7 @@ export type PlasmicHomepage__OverridesType = {
   startGroup2?: Flex__<"div">;
   frame11572?: Flex__<"div">;
   frame67?: Flex__<"div">;
+  productBox?: Flex__<typeof ProductBox>;
   frame11573?: Flex__<"div">;
   frame11574?: Flex__<"div">;
   frame11575?: Flex__<"div">;
@@ -4773,6 +4779,12 @@ function PlasmicHomepage__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.frame11567)}
             >
+              <div
+                data-plasmic-name={"logo7FullName4"}
+                data-plasmic-override={overrides.logo7FullName4}
+                className={classNames(projectcss.all, sty.logo7FullName4)}
+              />
+
               <Stack__
                 as={"div"}
                 data-plasmic-name={"frame66"}
@@ -4863,11 +4875,6 @@ function PlasmicHomepage__RenderFunc(props: {
                   </div>
                 </Stack__>
               </Stack__>
-              <div
-                data-plasmic-name={"logo7FullName4"}
-                data-plasmic-override={overrides.logo7FullName4}
-                className={classNames(projectcss.all, sty.logo7FullName4)}
-              />
             </Stack__>
             <div
               data-plasmic-name={"frame11453"}
@@ -5042,6 +5049,98 @@ function PlasmicHomepage__RenderFunc(props: {
                 </Stack__>
               </Stack__>
             </div>
+            <ProductCollection
+              className={classNames(
+                "__wab_instance",
+                sty.productCollection__ba5U
+              )}
+              emptyMessage={
+                <DataCtxReader__>
+                  {$ctx => (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ootTd
+                      )}
+                    >
+                      {"No product found!"}
+                    </div>
+                  )}
+                </DataCtxReader__>
+              }
+              loadingMessage={
+                <DataCtxReader__>
+                  {$ctx => (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__ixsYg
+                      )}
+                    >
+                      {"Loading..."}
+                    </div>
+                  )}
+                </DataCtxReader__>
+              }
+            >
+              <DataCtxReader__>
+                {$ctx => (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__yor9N)}
+                  >
+                    <ProductTextField
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productTextField__sdBhl
+                      )}
+                      field={"name"}
+                    />
+
+                    <ProductMedia
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productMedia__m59UN
+                      )}
+                    />
+                  </div>
+                )}
+              </DataCtxReader__>
+            </ProductCollection>
+            <ProductMedia
+              className={classNames("__wab_instance", sty.productMedia__t1OGc)}
+            />
+
+            <ProductBox
+              data-plasmic-name={"productBox"}
+              data-plasmic-override={overrides.productBox}
+              className={classNames("__wab_instance", sty.productBox)}
+              id={"gid://shopify/Product/5447322697892"}
+            >
+              <DataCtxReader__>
+                {$ctx => (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__j4Kvp)}
+                  >
+                    <ProductTextField
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productTextField__mkEa6
+                      )}
+                      field={"name"}
+                    />
+
+                    <ProductMedia
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productMedia__kIKfv
+                      )}
+                    />
+                  </div>
+                )}
+              </DataCtxReader__>
+            </ProductBox>
             <Stack__
               as={"div"}
               data-plasmic-name={"frame11573"}
@@ -5067,8 +5166,70 @@ function PlasmicHomepage__RenderFunc(props: {
                     data-plasmic-name={"rectangle617"}
                     data-plasmic-override={overrides.rectangle617}
                     className={classNames(projectcss.all, sty.rectangle617)}
-                  />
+                  >
+                    <ProductCollection
+                      className={classNames(
+                        "__wab_instance",
+                        sty.productCollection__nTiSk
+                      )}
+                      emptyMessage={
+                        <DataCtxReader__>
+                          {$ctx => (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__jUl4
+                              )}
+                            >
+                              {"No product found!"}
+                            </div>
+                          )}
+                        </DataCtxReader__>
+                      }
+                      loadingMessage={
+                        <DataCtxReader__>
+                          {$ctx => (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__dsHi
+                              )}
+                            >
+                              {"Loading..."}
+                            </div>
+                          )}
+                        </DataCtxReader__>
+                      }
+                    >
+                      <DataCtxReader__>
+                        {$ctx => (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___5OBql
+                            )}
+                          >
+                            <ProductTextField
+                              className={classNames(
+                                "__wab_instance",
+                                sty.productTextField__wzBaV
+                              )}
+                              field={"name"}
+                            />
 
+                            <ProductMedia
+                              className={classNames(
+                                "__wab_instance",
+                                sty.productMedia__tKbqG
+                              )}
+                            />
+                          </div>
+                        )}
+                      </DataCtxReader__>
+                    </ProductCollection>
+                  </div>
                   <Stack__
                     as={"div"}
                     data-plasmic-name={"arrows2"}
@@ -9085,13 +9246,13 @@ const PlasmicDescendants = {
     "lpDesktop",
     "frame10",
     "frame11567",
+    "logo7FullName4",
     "frame66",
     "frame11568",
     "cart2",
     "group3",
     "tagLCart3",
     "tagLCart4",
-    "logo7FullName4",
     "frame11453",
     "group4",
     "group745",
@@ -9105,6 +9266,7 @@ const PlasmicDescendants = {
     "startGroup2",
     "frame11572",
     "frame67",
+    "productBox",
     "frame11573",
     "frame11574",
     "frame11575",
@@ -10843,13 +11005,13 @@ const PlasmicDescendants = {
     "lpDesktop",
     "frame10",
     "frame11567",
+    "logo7FullName4",
     "frame66",
     "frame11568",
     "cart2",
     "group3",
     "tagLCart3",
     "tagLCart4",
-    "logo7FullName4",
     "frame11453",
     "group4",
     "group745",
@@ -10863,6 +11025,7 @@ const PlasmicDescendants = {
     "startGroup2",
     "frame11572",
     "frame67",
+    "productBox",
     "frame11573",
     "frame11574",
     "frame11575",
@@ -11102,14 +11265,15 @@ const PlasmicDescendants = {
   frame10: ["frame10"],
   frame11567: [
     "frame11567",
+    "logo7FullName4",
     "frame66",
     "frame11568",
     "cart2",
     "group3",
     "tagLCart3",
-    "tagLCart4",
-    "logo7FullName4"
+    "tagLCart4"
   ],
+  logo7FullName4: ["logo7FullName4"],
   frame66: [
     "frame66",
     "frame11568",
@@ -11123,7 +11287,6 @@ const PlasmicDescendants = {
   group3: ["group3", "tagLCart3", "tagLCart4"],
   tagLCart3: ["tagLCart3", "tagLCart4"],
   tagLCart4: ["tagLCart4"],
-  logo7FullName4: ["logo7FullName4"],
   frame11453: [
     "frame11453",
     "group4",
@@ -11173,6 +11336,7 @@ const PlasmicDescendants = {
   startGroup2: ["startGroup2"],
   frame11572: ["frame11572"],
   frame67: ["frame67"],
+  productBox: ["productBox"],
   frame11573: [
     "frame11573",
     "frame11574",
@@ -12563,13 +12727,13 @@ type NodeDefaultElementType = {
   lpDesktop: "div";
   frame10: "div";
   frame11567: "div";
+  logo7FullName4: "div";
   frame66: "div";
   frame11568: "div";
   cart2: "div";
   group3: "div";
   tagLCart3: "div";
   tagLCart4: "div";
-  logo7FullName4: "div";
   frame11453: "div";
   group4: "div";
   group745: "div";
@@ -12583,6 +12747,7 @@ type NodeDefaultElementType = {
   startGroup2: "div";
   frame11572: "div";
   frame67: "div";
+  productBox: typeof ProductBox;
   frame11573: "div";
   frame11574: "div";
   frame11575: "div";
@@ -13140,13 +13305,13 @@ export const PlasmicHomepage = Object.assign(
     lpDesktop: makeNodeComponent("lpDesktop"),
     frame10: makeNodeComponent("frame10"),
     frame11567: makeNodeComponent("frame11567"),
+    logo7FullName4: makeNodeComponent("logo7FullName4"),
     frame66: makeNodeComponent("frame66"),
     frame11568: makeNodeComponent("frame11568"),
     cart2: makeNodeComponent("cart2"),
     group3: makeNodeComponent("group3"),
     tagLCart3: makeNodeComponent("tagLCart3"),
     tagLCart4: makeNodeComponent("tagLCart4"),
-    logo7FullName4: makeNodeComponent("logo7FullName4"),
     frame11453: makeNodeComponent("frame11453"),
     group4: makeNodeComponent("group4"),
     group745: makeNodeComponent("group745"),
@@ -13160,6 +13325,7 @@ export const PlasmicHomepage = Object.assign(
     startGroup2: makeNodeComponent("startGroup2"),
     frame11572: makeNodeComponent("frame11572"),
     frame67: makeNodeComponent("frame67"),
+    productBox: makeNodeComponent("productBox"),
     frame11573: makeNodeComponent("frame11573"),
     frame11574: makeNodeComponent("frame11574"),
     frame11575: makeNodeComponent("frame11575"),
