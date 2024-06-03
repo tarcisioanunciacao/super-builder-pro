@@ -646,7 +646,8 @@
           "componentImportPath": "@plasmicpkgs/commerce-shopify"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "xp1p7dmg329XVLHyuEUxD2",
@@ -764,7 +765,8 @@
           "componentImportPath": "@plasmicpkgs/commerce"
         }
       ],
-      "customFunctions": []
+      "customFunctions": [],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

@@ -9181,8 +9181,10 @@
 }
 .productMedia__t1OGc:global(.__wab_instance) {
   max-width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: relative;
+  object-position: left 50%;
+  width: 50%;
 }
 .productBox:global(.__wab_instance) {
   max-width: 100%;
